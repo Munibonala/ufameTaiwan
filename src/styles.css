@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./swiper.css";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Full Sans LC Medium', "Helvetica Neue", sans-serif; }
+@font-face {
+    font-family: 'Full Sans LC Medium';
+    src: url(assets/fonts/full-sans-1563623.zip) format("opentype");
+  }

@@ -1,0 +1,32 @@
+
+.mat-nav{
+    height: 30px;
+    background-color: #65ae9f;
+}
+.main-nav a{
+  text-decoration: none !important;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .mat-button{
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #fff;
+  }
+  .active{
+    border-bottom: 3px solid #cc7425;
+transform: scale(1.1);
+color: #65ae9f !important;
+background-color: #fff;
+  }
+  .mat-button:hover{
+      transition: all 0.5s;
+border-bottom: 3px solid #cc7425;
+transform: scale(1.1);
+color: #65ae9f !important;
+background-color: #fff;
+  }
+  *{
+    font-family: 'Open Sans', sans-serif;
+  }

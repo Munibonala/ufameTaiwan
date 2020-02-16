@@ -1,0 +1,15 @@
+.bg-custom{
+    background: white url("../../../assets/icons/HDI_1.png") no-repeat center;
+    background-size: cover;
+}
+ul.list-unstyled {
+    list-style: none;
+    padding: 20px;
+  }
+ 
+  ul.list-unstyled li{
+     padding: 10px 0 10px 0;
+  }
+  ul li{
+    padding: 5px 0 5px 0;
+ }

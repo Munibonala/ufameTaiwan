@@ -1,0 +1,6 @@
+.bg-custom{
+    background: white url("../../../assets/icons/Company.png") no-repeat center;
+}
+.bg-custom  p{
+    font-size: 18px;
+}

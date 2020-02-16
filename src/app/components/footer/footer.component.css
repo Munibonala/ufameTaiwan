@@ -1,0 +1,10 @@
+.custom-bg{
+    width: 100%;
+    background: #569b8e url("../../../assets/icons/Footer.png") no-repeat fixed center;
+    background-size: cover;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+}
+.unorder li {
+    padding-top: 6px !important;
+    }

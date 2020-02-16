@@ -1,0 +1,23 @@
+.bg-custom{
+    background: white url(../../../assets/icons/Icpackaging.png) no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+}
+h4{
+    margin-top: 20px;
+}
+ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  ul li::before {
+    content: "\25BA";
+    color: green;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  ul li{
+     padding-bottom: 10px;
+  }
