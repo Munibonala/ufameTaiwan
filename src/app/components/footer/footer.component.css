@@ -8,3 +8,6 @@
 .unorder li {
     padding-top: 6px !important;
     }
+    input:focus{
+        color: whitesmoke;
+    }

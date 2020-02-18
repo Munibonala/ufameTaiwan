@@ -15,14 +15,14 @@
       background-color: #fff;
   }
   .active{
-    border-bottom: 3px solid #cc7425;
+    border-bottom: 3px solid #d9241c;
 transform: scale(1.1);
 color: #65ae9f !important;
 background-color: #fff;
   }
   .mat-button:hover{
       transition: all 0.5s;
-border-bottom: 3px solid #cc7425;
+border-bottom: 3px solid #d9241c;
 transform: scale(1.1);
 color: #65ae9f !important;
 background-color: #fff;

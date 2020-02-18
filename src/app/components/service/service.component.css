@@ -1,0 +1,33 @@
+.bg-custom{
+    background: white url("../../../assets/icons/Services_1.png") no-repeat  center;
+    background-size: cover;
+}
+.bg-custom1{
+    background: white url("../../../assets/icons/Services.png")no-repeat center;
+    background-size: cover;
+}
+ul li{
+    padding-bottom: 7px;
+ }
+ .card{
+     min-height: 90%;
+     margin-bottom: 20px;
+     background-color: #569b8e;
+     color: whitesmoke;
+     text-align: center;
+ }
+ .card h6{
+    font-family: 'LcFont medium';
+ }
+ .card .card-body{
+     font-size: 14px;
+     font-family: "LcFont light";
+ }
+ p{
+     font-size: 14px;
+     font-family: "LcFont light";
+ }
+ .down-text p{
+     font-size: 16px;
+     font-family: 'LcFont medium';
+ }

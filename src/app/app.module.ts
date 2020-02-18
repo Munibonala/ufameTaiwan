@@ -13,7 +13,11 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { LayoutDesignComponent } from './components/layout-design/layout-design.component';
 import { IcPackingComponent } from './components/ic-packing/ic-packing.component';
 import { HdiComponent } from './components/hdi/hdi.component';
-import { QualityComponent } from './components/quality/quality.component'
+import { QualityComponent } from './components/quality/quality.component';
+import { ServiceComponent } from './components/service/service.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,14 +30,19 @@ import { QualityComponent } from './components/quality/quality.component'
     LayoutDesignComponent,
     IcPackingComponent,
     HdiComponent,
-    QualityComponent
+    QualityComponent,
+    ServiceComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

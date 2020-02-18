@@ -6,6 +6,8 @@ import { LayoutDesignComponent } from './components/layout-design/layout-design.
 import { IcPackingComponent } from './components/ic-packing/ic-packing.component';
 import { HdiComponent } from './components/hdi/hdi.component';
 import { QualityComponent } from './components/quality/quality.component';
+import { ServiceComponent } from './components/service/service.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 
 const routes: Routes = [
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path:"ic-packing",component:IcPackingComponent},
   {path:"hdi",component:HdiComponent},
   {path:"quality",component:QualityComponent},
+  {path:"service",component:ServiceComponent},
+  {path:"contact-us",component:ContactUsComponent},
   {path:"**",redirectTo:"home",pathMatch:"full"}
 ];
 

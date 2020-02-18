@@ -18,46 +18,50 @@
                 If you have questions regarding our products & services, please contact us by calling or e-mail us and
                 we"ll get back to you as soon as possible. We look forward hearing from you.
             </p>
+            <div *ngIf="isResponceSuccess" class="alert alert-success alert-dismissible fade show" role="alert">
+                {{serverResponce}}
+                <button type="button" class="close" (click)="hideAlert()" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
         </div>
     </div>
     <div class="row" style="background-color: #C6DCD8;">
+        
         <div class="col-md-1"></div>
         <div class="col-md-9">
-            <form class="w-100">
+            <form class="w-100" [formGroup]="contactUsForm" >
                 <div class="form-group row">
                     <div class="col-md-6">
-                        <div class="input-group  mb-3">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text bg-white" id="basic-addon1">Name*</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="form-group mb-3">
+                            <input type="text" formControlName="name" class="form-control bg-light border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name*">
                           </div>
-                          <div class="input-group  mb-3">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text bg-white" id="basic-addon1">Email*</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                          <div class="form-group mb-3">
+                            <input type="email" formControlName="emailID" class="form-control bg-light border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email*">
                           </div>
-                          <div class="input-group  mb-3">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text bg-white" id="basic-addon1">Phone Number*</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                          <div class="form-group mb-3">
+                            <input type="text" formControlName="phoneNumber" class="form-control bg-light border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password*">
                           </div>
                     </div>
                     <div class="col-md-6">
                             <div class="form-group">
-                                <textarea placeholder="message*" class="form-control"  rows="2"></textarea>
+                                <textarea placeholder="message*" formControlName="message" class="form-control"  rows="2"></textarea>
                             </div>
-                            <div class="input-group mb-3">
-                                <div class="custom-file">
-                                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                </div>
+                            <div class="form-group bg-light mb-3 py-2 rounded-top rounded-bottom">
+                                <input type="file" class="form-control d-none" name="file" id="inputGroupFile01" #fileInput
+                                aria-describedby="inputGroupFileAddon01" 
+                                (change)="fileProgress($event)">
+                                <button mat-raised-button  type="button" style="height: 31px;" (click)="fileInput.click()">Choose file</button>
+                                <span class="text-muted">{{fileName}}</span>
                               </div>
                     </div>
                 </div>
             </form>
+        </div>
+        <div class="col-md-2 d-flex justify-content-center">
+            <div class="align-self-center">
+                <button mat-raised-button type="submit" (click)="sendDetails()"   style="background-color: #cc7425; color: white;" class="mx-auto align-self-center">Submit</button>
+            </div>
         </div>
     </div>
 </div>
